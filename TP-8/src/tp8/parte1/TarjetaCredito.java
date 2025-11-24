@@ -26,7 +26,7 @@ public class TarjetaCredito implements PagoConDescuento {
     @Override
     public void aplicarDescuento(double descuento, double pago, Pagable pedido) {
         
-        double saldo = pedido.calcularTotal() * (descuento / 100.0);
+        double saldo = pedido.calcularTotal() * (1 - descuento / 100.0);
         if (pedido.getEstadoPago() == EstadosPago.NOPAGADO && saldo <= pago) {
             pedido.setEstadoPagado(cliente);
         } else {

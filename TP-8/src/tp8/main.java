@@ -20,7 +20,7 @@ public class main {
         pedido.agregarProducto(p1);
         pedido.agregarProducto(p2);
         TarjetaCredito tarjeta = new TarjetaCredito(cliente);
-        tarjeta.aplicarDescuento(10, 5000, pedido);
+        tarjeta.aplicarDescuento(10, 21500, pedido);
         
     }
     
