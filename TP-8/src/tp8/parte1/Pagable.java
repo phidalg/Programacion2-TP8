@@ -6,4 +6,12 @@ package tp8.parte1;
  */
 public interface Pagable {
     
+    public abstract double calcularTotal();
+    
+    public abstract void setEstadoPagado(Notificable cliente);
+    
+    public abstract void setEstadoNoPagado(Notificable cliente);
+    
+    public abstract EstadosPago getEstadoPago();
+    
 }
